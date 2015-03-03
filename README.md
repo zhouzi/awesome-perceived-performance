@@ -1,6 +1,6 @@
 # Reactive Design
 
-Reactive Design, an approach to solve loading states.
+Reactive Design is an approach to solve loading states.
 
 ## Core Principle
 
@@ -27,3 +27,4 @@ This document is an attempt to formalize this approach with definitions, example
 
 * [Non-blocking UI's with interface previews](http://www.callumhart.com/blog/non-blocking-uis-with-interface-previews)
 * [Facebook content placeholder deconstruction](http://cloudcannon.com/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html)
+* [Introducing Reactive Design on Codepen](http://codepen.io/Zhouzi/full/ogdxJj/)
