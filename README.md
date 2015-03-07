@@ -17,4 +17,4 @@ This document is a work in progress. Even if we have been designing reactive int
 * [Reactive Systems - The Reactive Manifesto](http://www.reactivemanifesto.org/)
 * [Non-blocking UI's with interface previews](http://www.callumhart.com/blog/non-blocking-uis-with-interface-previews)
 * [Facebook content placeholder deconstruction](http://cloudcannon.com/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html)
-* [Introducing Reactive Design on Codepen](http://codepen.io/Zhouzi/full/ogdxJj/)
+* [Reactive Design demo on Codepen](http://codepen.io/Zhouzi/full/ogdxJj/)
