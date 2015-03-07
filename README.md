@@ -6,7 +6,7 @@ Just as in Reactive Systems, Reactive Design is about splitting an application/i
 
 In fact, most of the time the reactions and consequences of an user action are obvious and "natural" (e.g clicking on a link, taping a "next" arrow in a carousel). Things tend to get more complicated when the action result in loading content, which is breaking the natural flow. Loading states are often harder to solve since they are, by definition, periods of time you can't avoid (otherwise they are not loading states).
 
-A pattern that helps dealing with it have been described as "[placeholder content](http://cloudcannon.com/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html)", "[non-blocking UIs with interface previews](http://www.callumhart.com/blog/non-blocking-uis-with-interface-previews)". It helps conveying a clear idea of what's going to happen some time in the future thanks to **modules independencies** (a module being a portion of the interface).
+A pattern that helps dealing with it have been described as "[placeholder content](http://cloudcannon.com/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html)", "[non-blocking UIs with interface previews](http://www.callumhart.com/blog/non-blocking-uis-with-interface-previews)". It is about conveying a clear idea of what's going to happen some time in the future thanks to **modules independencies** (a module being a portion of the interface).
 
 ## About this document
 
