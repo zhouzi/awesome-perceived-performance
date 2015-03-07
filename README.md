@@ -1,30 +1,20 @@
 # Reactive Design
 
-Reactive Design is an approach to solve loading states.
+This document is an attempt to formalize and provide resources to design patterns that are, in a lot of ways, close to [Reactive Systems](http://www.reactivemanifesto.org/). The core principle is that **every user's actions should have a direct consequence**. If the consequence is not straight forward, the user should be provided with feedbacks indicating what is going to happen or at least what is happening. It's all about designing "reactive" interfaces and experiences.
 
-## Core Principle
+Just as in Reactive Systems, Reactive Design is about splitting an application/interface into independent modules that communicate together. By doing so, modules are not dependent of others' tasks (while still communicating). In design terms, it means that feedbacks should not be restrained by any other "background" processuses. Users shouldn't be confused nor restrained by internal *"limitations"*.
 
-Every user's actions should have a direct consequence, indicating what is going to happen or at least what is happening.
+In fact, most of the time the reactions and consequences of an user action are obvious and "natural" (e.g clicking on a link, taping a "next" arrow in a carousel). Things tend to get more complicated when the action result in loading content, which is breaking the natural flow. Loading states are often harder to solve since they are, by definition, periods of time that you can't avoid (otherwise they are not loading states).
 
-## A parallel to Reactive Systems
+Some patterns that helps dealing with it have been described as "[placeholder content](http://cloudcannon.com/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html)", "[non-blocking UIs with interface previews](http://www.callumhart.com/blog/non-blocking-uis-with-interface-previews)". What they have in common is that they both convey a clear idea of what's going to happen some time in the future. They are **independent feedbacks**.
 
-Just as in [Reactive Systems](http://www.reactivemanifesto.org/), Reactive Design is about splitting an application/interface into independent modules that communicate together.
-By doing so, modules are not dependent of others' tasks (while still communicating).
+## About this document
 
-## Is Reactive Design just about solving "loading states"?
-
-From a global perspective, Reactive Design is about [reacting to every user's actions](#core-principle).
-So the short answer is no, it is not just about solving loading states.
-Actually, most of the time the reactions and consequences of an user action are obvious and "natural" (e.g clicking on a link, taping a "next" arrow in a carousel).
-Loading states are often harder to solve since they are, by definition, periods of time that you can't avoid.
-
-## Is Reactive Design something new that emerged lately?
-
-No. In fact, you probably face it every day on Facebook, Slack and other interface-based services.
-This document is an attempt to formalize this approach with definitions, examples and resources.
+This document is a work in progress. Even if we have been designing reactive interfaces for a while now, it still lack of definitions and contributions are more than welcome! Please also note that even if this document mention [Reactive Systems and The Reactive Manifesto](http://www.reactivemanifesto.org/), there is no relation between the two projects as the time of writing.
 
 # Resources
 
+* [Reactive Systems - The Reactive Manifesto](http://www.reactivemanifesto.org/)
 * [Non-blocking UI's with interface previews](http://www.callumhart.com/blog/non-blocking-uis-with-interface-previews)
 * [Facebook content placeholder deconstruction](http://cloudcannon.com/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html)
 * [Introducing Reactive Design on Codepen](http://codepen.io/Zhouzi/full/ogdxJj/)
