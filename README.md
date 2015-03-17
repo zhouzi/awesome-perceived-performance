@@ -10,7 +10,7 @@ A pattern that helps dealing with it has been described as "[placeholder content
 
 ## About this document
 
-This is an open, public and work in progress document. "Reactive Design" has been around us for a while now but it still lack of definitions and resources. The purpose of this repository is to give an home to those design patterns. Contributions are more than welcome!
+This is an open, public and work in progress document. "Reactive Design" has been around us for a while now but it still lack of definitions and resources. The purpose of this repository is to give a home to those design patterns. Contributions are more than welcome!
 
 Please also note that even if this document mention [Reactive Systems and The Reactive Manifesto](http://www.reactivemanifesto.org/), there is no relation between the two projects and teams at the time of writing.
 
