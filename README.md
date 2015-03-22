@@ -1,6 +1,6 @@
-The purpose of this repository is to collect resources about design patterns that helps improving perceived speed. Actually, it's all about designing interfaces that are "reactive". The name is also a reference to [Reactive Systems](http://www.reactivemanifesto.org/).
+The purpose of this repository is to collect resources about design patterns that help improving perceived speed by designing reactive interfaces. The name is also a reference to [Reactive Systems](http://www.reactivemanifesto.org/).
 
-Please note that there is no relation between [The Reactive Manifesto](http://www.reactivemanifesto.org/) and this project at the time of writing.
+*Please note that there is no relation between [The Reactive Manifesto](http://www.reactivemanifesto.org/) and this project at the time of writing.*
 
 # Resources
 
