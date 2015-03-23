@@ -6,6 +6,7 @@ The purpose of this repository is to collect resources about design patterns tha
 
 # Resources
 
+* [The 3 White Lies Behind Instagram's Lightning Speed](http://www.fastcodesign.com/1669788/the-3-white-lies-behind-instagrams-lightning-speed)
 * [UX Tactics To Make Slow Things Seem Faster](http://blog.placeit.net/ux-tactics-make-slow-things-seem-faster/)
 * [Non-blocking UI's with interface previews](http://www.callumhart.com/blog/non-blocking-uis-with-interface-previews)
 * [Facebook content placeholder deconstruction](http://cloudcannon.com/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html)
