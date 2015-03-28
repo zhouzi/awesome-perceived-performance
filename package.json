@@ -1,0 +1,18 @@
+{
+  "name": "reactivedesign",
+  "version": "0.0.1",
+  "description": "The purpose of this repository is to collect resources about design patterns that help improving perceived speed by designing reactive interfaces. The name is also a reference to [Reactive Systems](http://www.reactivemanifesto.org/).",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zhouzi/reactivedesign.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zhouzi/reactivedesign/issues"
+  },
+  "homepage": "https://github.com/Zhouzi/reactivedesign",
+  "devDependencies": {
+    "marked": "^0.3.3"
+  }
+}
