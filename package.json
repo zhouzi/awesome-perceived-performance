@@ -13,6 +13,9 @@
   },
   "homepage": "https://github.com/Zhouzi/reactivedesign",
   "devDependencies": {
-    "marked": "^0.3.3"
+    "gulp": "^3.8.11",
+    "marked": "^0.3.3",
+    "gulp-autoprefixer": "^1.0.1",
+    "gulp-ruby-sass": "^0.7.1"
   }
 }
