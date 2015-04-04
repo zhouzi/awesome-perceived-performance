@@ -10,10 +10,10 @@ module.exports = function generator () {
                 (marked(content)
                     .split('<hr>')
                     .pop()
-                    .replace(/<h1/g, '</article><article class="article"><h1')
+                    .replace(/<h2/g, '</article><article class="article"><h2')
                     .replace(/^<\/article>/, '') +
                     '</article>')
-                    .replace(/<\/h1>/g, '</h1><div class="article__content">')
+                    .replace(/<\/h2>/g, '</h2><div class="article__content">')
                     .replace(/<\/article>/g, '</div></article>');
 
         fs.readFile('assets/template.html', 'utf8', function (err, content) {
