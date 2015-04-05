@@ -75,7 +75,7 @@ h2 {
 
   a {
     text-transform: uppercase;
-    color: $color-primary;
+    color: darken($color-primary, 10%);
     text-decoration: none;
 
     &:focus,

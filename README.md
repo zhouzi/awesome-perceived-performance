@@ -47,7 +47,7 @@ One example (from Instagram) is that whenever you pick a photo to share, as soon
 
 ## Feedback shouldn't depend on servers
 
-What this means is that no matter what your coverage situation is, you still get the visual feedback.
+What this means is that no matter what your coverage situation is, you still get the visual feedback of your action.
 
 * [UX Tactics To Make Slow Things Seem Faster](http://blog.placeit.net/ux-tactics-make-slow-things-seem-faster/)
 * [The 3 White Lies Behind Instagram's Lightning Speed](http://www.fastcodesign.com/1669788/the-3-white-lies-behind-instagrams-lightning-speed)
@@ -78,9 +78,9 @@ Any action such as loading a new page or clicking a button should have an immedi
 
 * [Non-blocking UI's with interface previews](http://www.callumhart.com/blog/non-blocking-uis-with-interface-previews)
 
-## Users can use parts of your site that aren't dependent on the server
+## Don't block the parts that aren't dependent on the server
 
-Which means they aren't forced to wait for the whole page to load before navigating away from it.
+Which means that users are not forced to wait for the whole page to load before navigating away from it.
 
 * [Non-blocking UI's with interface previews](http://www.callumhart.com/blog/non-blocking-uis-with-interface-previews)
 
