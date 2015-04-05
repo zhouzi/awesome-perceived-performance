@@ -1,25 +1,54 @@
-var marked = require('marked'),
-    fs     = require('fs');
+var fs = require('fs');
+var marked = require('marked');
+var handlebars = require('handlebars');
+var entities = require('entities');
 
 module.exports = function generator () {
+    var data;
+    var layout;
+    var template;
+
+    function htmlToText (str) {
+        return entities.decodeHTML(str.replace(/(<([^>]+)>)/gi, ''));
+    }
+
+    function encode (str) {
+        return encodeURIComponent(str);
+    }
+
+    // Some callbacks hell down there, be careful!
     fs.readFile('README.md', 'utf8', function (err, content) {
         if (err) throw err;
 
-        // Yeah I know this is pretty ugly but it does the trick so I'll stick with it for now ;)
-        var htmlContent =
-                (marked(content)
-                    .split('<hr>')
-                    .pop()
-                    .replace(/<h2/g, '</article><article class="article"><h2')
-                    .replace(/^<\/article>/, '') +
-                    '</article>')
-                    .replace(/<\/h2>/g, '</h2><div class="article__content">')
-                    .replace(/<\/article>/g, '</div></article>');
+        data = { quotes: [] };
+        var quotes = marked(content).split('<h2');
+        quotes.shift();
 
-        fs.readFile('assets/template.html', 'utf8', function (err, content) {
+        for (var i = 0, quote, heading, id, status; quote = quotes[i]; i++) {
+            quote = '<h2' + quote;
+
+            heading = quote.match(/(.+<\/h2>)/)[0].trim();
+            id      = quote.match(/<h2\s+id="(.+)"/)[1].trim();
+            status  = encode(htmlToText(heading) + ' http://gabinaureche.com/reactivedesign#' + id);
+
+            data.quotes.push({
+                heading: heading,
+                id:      id,
+                status:  status,
+                content: quote.match(/(<p(?:.|\s)+)/)[0].trim()
+            });
+        }
+
+        fs.readFile('assets/layout.html', 'utf8', function (err, content) {
             if (err) throw err;
+            layout = content;
 
-            fs.writeFile('index.html', content.replace(/{{ content }}/g, htmlContent));
+            fs.readFile('assets/template.html', 'utf8', function (err, content) {
+                if (err) throw err;
+                template = handlebars.compile(content)(data);
+
+                fs.writeFile('index.html', layout.replace(/{{ template }}/g, template));
+            });
         });
     });
 };

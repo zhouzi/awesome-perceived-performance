@@ -114,10 +114,44 @@ header {
       color: darken($color-primary, 20%);
     }
   }
+
+  [class^="icon-"] {
+    font-size: 120%;
+    margin-right: .2em;
+    vertical-align: middle;
+  }
 }
 
-[class^="icon-"] {
-  font-size: 120%;
-  margin-right: .2em;
-  vertical-align: middle;
+.article__actions {
+  $size: 30px;
+
+  display: block;
+  height: $size;
+  width: 100%;
+
+  position: absolute;
+  top: -($size / 2);
+  left: 0;
+
+  a {
+    $border-width: 2px;
+
+    display: inline-block;
+    width: $size;
+    height: $size;
+    line-height: ($size - $border-width);
+    background-color: $color-primary;
+    color: #fff;
+    border: $border-width solid $color-primary;
+    border-radius: 50%;
+    transition: all 200ms ease-out;
+
+    &:focus,
+    &:hover {
+      background-color: #fff;
+      color: $color-primary;
+      text-decoration: none;
+      transform: scale(1.2);
+    }
+  }
 }
