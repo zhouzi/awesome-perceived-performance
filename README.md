@@ -6,6 +6,7 @@ Feel free to contribute by [submitting an "issue"](https://github.com/Zhouzi/rea
 
 # Articles
 
+* [Asynchronous UIs - the future of web user interfaces](http://old.alexmaccaw.com/posts/async_ui)
 * [The 3 White Lies Behind Instagram's Lightning Speed](http://www.fastcodesign.com/1669788/the-3-white-lies-behind-instagrams-lightning-speed)
 * [UX Tactics To Make Slow Things Seem Faster](http://blog.placeit.net/ux-tactics-make-slow-things-seem-faster/)
 * [Building interface previews with React](http://www.callumhart.com/blog/building-interface-previews-with-react)
@@ -24,6 +25,33 @@ Feel free to contribute by [submitting an "issue"](https://github.com/Zhouzi/rea
 
 ---
 
+## Perceived speed matters a lot
+
+Speed is critical and can make a huge difference to user experience, engagement and revenue.
+
+* [Asynchronous UIs - the future of web user interfaces](http://old.alexmaccaw.com/posts/async_ui)
+
+## Interactions should be resolved instantly
+
+There should be no loading messages or spinners.
+Requests to the server should be decoupled from the interface.
+
+* [Asynchronous UIs - the future of web user interfaces](http://old.alexmaccaw.com/posts/async_ui)
+
+## Users want to use your application without any interruptions
+
+They don't give a damn if a request to the server is still pending.
+
+* [Asynchronous UIs - the future of web user interfaces](http://old.alexmaccaw.com/posts/async_ui)
+
+## Feedback is useful and doesn't block further interaction
+
+Not all feedback is bad. Unobtrusive feedback that's actually useful to your users is completely fine.
+
+* [Asynchronous UIs - the future of web user interfaces](http://old.alexmaccaw.com/posts/async_ui)
+
+
+
 ## Load Content Based On Importance, Not Order
 
 If a lot of friends have liked something, load it first.
@@ -34,7 +62,8 @@ If a lot of friends have liked something, load it first.
 
 ## Use prerendering
 
-When reading a blog, a lot of people will click "next post". So you could get the next page ready before they even click it.
+When reading a blog, a lot of people will click "next post".
+So you could get the next page ready before they even click it.
 
 * [UX Tactics To Make Slow Things Seem Faster](http://blog.placeit.net/ux-tactics-make-slow-things-seem-faster/)
 
