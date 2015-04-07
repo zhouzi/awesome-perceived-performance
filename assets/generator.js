@@ -29,7 +29,7 @@ module.exports = function generator () {
 
             heading = quote.match(/(.+<\/h2>)/)[0].trim();
             id      = quote.match(/<h2\s+id="(.+)"/)[1].trim();
-            status  = encode(htmlToText(heading) + ' http://gabinaureche.com/reactivedesign#' + id);
+            status  = encode('"' + htmlToText(heading) + '" http://gabinaureche.com/reactivedesign#' + id + ' #reactivedesign');
 
             data.quotes.push({
                 heading: heading,
