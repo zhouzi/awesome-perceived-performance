@@ -27,6 +27,14 @@ Feel free to contribute by [submitting an "issue"](https://github.com/Zhouzi/rea
 
 ---
 
+## An operation should only be represented by one indicator
+
+For example, one refresh operation should not display both a refresh bar and an activity circle.
+
+* [Progress & Activity](http://www.google.com/design/spec/components/progress-activity.html)
+
+
+
 ## Perceived speed matters a lot
 
 Speed is critical and can make a huge difference to user experience, engagement and revenue.
