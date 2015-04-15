@@ -18,6 +18,7 @@ Feel free to contribute by [submitting an "issue"](https://github.com/Zhouzi/rea
 
 # Demos & Examples
 
+* [The progress bar illusion](http://www.newscientist.com/blogs/nstv/2010/12/best-videos-of-2010-progress-bar-illusion.html)
 * [Demo of "Building interface previews with React"](http://www.callumhart.com/demo/building-interface-previews-with-react)
 * [Reactive Design on Codepen](http://codepen.io/Zhouzi/full/ogdxJj/)
 
