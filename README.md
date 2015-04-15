@@ -6,6 +6,7 @@ Feel free to contribute by [submitting an "issue"](https://github.com/Zhouzi/rea
 
 # Articles
 
+* [Progress & Activity](http://www.google.com/design/spec/components/progress-activity.html)
 * [The Need for Speed](https://cloudup.com/blog/the-need-for-speed)
 * [Asynchronous UIs - the future of web user interfaces](http://old.alexmaccaw.com/posts/async_ui)
 * [The 3 White Lies Behind Instagram's Lightning Speed](http://www.fastcodesign.com/1669788/the-3-white-lies-behind-instagrams-lightning-speed)
