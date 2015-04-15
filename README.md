@@ -33,6 +33,12 @@ For example, one refresh operation should not display both a refresh bar and an 
 
 * [Progress & Activity](http://www.google.com/design/spec/components/progress-activity.html)
 
+## If the percentage of completion is known, use a determinate indicator
+
+They give users a quick sense of how long an operation will take.
+
+* [Progress & Activity](http://www.google.com/design/spec/components/progress-activity.html)
+
 
 
 ## Perceived speed matters a lot
