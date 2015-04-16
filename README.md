@@ -17,6 +17,10 @@ Feel free to contribute by [submitting an "issue"](https://github.com/Zhouzi/rea
 * [Facebook content placeholder deconstruction](http://cloudcannon.com/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html)
 * [Making Wait Times Feel Shorter](http://usabilitypost.com/2009/01/23/making-wait-times-feel-shorter/)
 
+# Documents
+
+* [A study on tolerable waiting time](http://sighci.org/uploads/published_papers/bit04/BIT_Nah.pdf)
+
 # Demos & Examples
 
 * [The progress bar illusion](http://www.newscientist.com/blogs/nstv/2010/12/best-videos-of-2010-progress-bar-illusion.html)
