@@ -1,6 +1,7 @@
 $font-size-base: 14px;
 
 $color-primary: #23CBBF;
+$color-primary-darker: darken($color-primary, 10%);
 $body-bg: desaturate(lighten($color-primary, 45%), 40%);
 $block-bg: #fff;
 $text-color: #3d3d3d;
@@ -62,7 +63,6 @@ h2 {
 .article__content {
   position: relative;
   padding: $gutter;
-  //border-top: 4px solid $color-primary;
 
   &:before {
     $stroke-width: 2px;
@@ -75,7 +75,7 @@ h2 {
 
   a {
     text-transform: uppercase;
-    color: darken($color-primary, 10%);
+    color: $color-primary-darker;
     text-decoration: none;
 
     &:focus,
@@ -97,12 +97,8 @@ ul {
 }
 
 header {
+  background-color: #fff;
   text-align: center;
-  margin-bottom: ($gutter / 2);
-
-  & {
-    color: $text-muted;
-  }
 
   a {
     text-decoration: none;
@@ -115,11 +111,37 @@ header {
     }
   }
 
+  [data-icon]:before,
   [class^="icon-"] {
     font-size: 120%;
-    margin-right: .2em;
     vertical-align: middle;
   }
+
+  [data-icon]:before {
+    content: "c";
+  }
+
+  iframe {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.header-inner {
+  max-width: $wrapper-max-width;
+  margin: auto;
+  padding: ($gutter * 2) $gutter;
+}
+
+h1 {
+  color: $color-primary;
+  font-size: 3.6rem;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.darker {
+  color: $color-primary-darker;
 }
 
 .article__actions {

@@ -3,7 +3,7 @@ var marked = require('marked');
 var handlebars = require('handlebars');
 var entities = require('entities');
 
-module.exports = function generator () {
+module.exports = function generator (done) {
     var data;
     var layout;
     var template;
@@ -48,6 +48,7 @@ module.exports = function generator () {
                 template = handlebars.compile(content)(data);
 
                 fs.writeFile('index.html', layout.replace(/{{ template }}/g, template));
+                done();
             });
         });
     });
