@@ -29,6 +29,14 @@ Feel free to contribute by [submitting an "issue"](https://github.com/Zhouzi/rea
 
 ---
 
+## Avoid using static progress indicators
+
+While any feedback is better than none, static indicators should be replaced with another type of indicator.
+
+* [Progress Indicators Make a Slow System Less Insufferable](http://www.nngroup.com/articles/progress-indicators/)
+
+
+
 ## An operation should only be represented by one indicator
 
 For example, one refresh operation should not display both a refresh bar and an activity circle.
