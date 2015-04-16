@@ -40,6 +40,7 @@ For example, one refresh operation should not display both a refresh bar and an 
 They give users a quick sense of how long an operation will take.
 
 * [Progress & Activity](http://www.google.com/design/spec/components/progress-activity.html)
+* [Progress Indicators Make a Slow System Less Insufferable](http://www.nngroup.com/articles/progress-indicators/)
 
 
 
@@ -116,6 +117,7 @@ If people have something to do sitting in front of them, they're much less likel
 All you have to do is make the button look pressed as soon as it’s pressed.
 
 * [UX Tactics To Make Slow Things Seem Faster](http://blog.placeit.net/ux-tactics-make-slow-things-seem-faster/)
+* [Progress Indicators Make a Slow System Less Insufferable](http://www.nngroup.com/articles/progress-indicators/)
 
 
 
