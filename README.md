@@ -6,6 +6,7 @@ Feel free to contribute by [submitting an "issue"](https://github.com/Zhouzi/rea
 
 # Articles
 
+* [Let Your Users Wait](http://uxmag.com/articles/let-your-users-wait)
 * [Progress Indicators Make a Slow System Less Insufferable](http://www.nngroup.com/articles/progress-indicators/)
 * [Progress & Activity](http://www.google.com/design/spec/components/progress-activity.html)
 * [The Need for Speed](https://cloudup.com/blog/the-need-for-speed)
