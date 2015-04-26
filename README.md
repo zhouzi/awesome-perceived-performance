@@ -35,6 +35,12 @@ So the last added resources are at the top.
 
 ---
 
+## Increase the number of pulsations
+
+A research study found that "the progress bar with increasing pulsation was more likely to be perceived as having a shorter duration".
+
+* [How to Make Progress Bars Feel Faster to Users](http://uxmovement.com/buttons/how-to-make-progress-bars-feel-faster-to-users/)
+
 ## Use backwards moving ribbings
 
 A research study found that progress bars with backwards moving ribbings seem faster to users than forwards moving ribbings.
