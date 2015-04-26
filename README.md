@@ -35,6 +35,14 @@ So the last added resources are at the top.
 
 ---
 
+## Making users wait too long is a user experience issue
+
+If users get the feeling that your application loads too slow, they’ll grow impatient, and spend their time elsewhere.
+
+* [How to Make Progress Bars Feel Faster to Users](http://uxmovement.com/buttons/how-to-make-progress-bars-feel-faster-to-users/)
+
+
+
 ## What do you eat when you’re starving?
 
 "Anything" is probably the correct answer.
