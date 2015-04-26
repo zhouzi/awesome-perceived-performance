@@ -34,6 +34,13 @@ Feel free to contribute by [submitting an "issue"](https://github.com/Zhouzi/rea
 
 ---
 
+## What do you eat when you’re starving?
+
+"Anything" is probably the correct answer.
+In other words, our expectations of something (...) obviously affect our appreciation of the outcome.
+
+* [Let Your Users Wait](http://uxmag.com/articles/let-your-users-wait)
+
 ## Faster isn’t always better
 
 When an action we perform happens faster than we would expect it to, we may not appreciate the effort put into it.
