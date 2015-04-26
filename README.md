@@ -20,6 +20,7 @@ So the last added resources are at the top.
 
 # Documents
 
+* [Faster Progress Bars: Manipulating Perceived Duration with Visual Augmentations](http://www.chrisharrison.net/projects/progressbars2/ProgressBarsHarrison.pdf)
 * [A study on tolerable waiting time](http://sighci.org/uploads/published_papers/bit04/BIT_Nah.pdf)
 
 # Demos & Examples
