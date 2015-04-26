@@ -34,6 +34,15 @@ Feel free to contribute by [submitting an "issue"](https://github.com/Zhouzi/rea
 
 ---
 
+## Faster isn’t always better
+
+When an action we perform happens faster than we would expect it to, we may not appreciate the effort put into it.
+In more extreme cases we may think that if it happened too fast, maybe it didn’t happen at all.
+
+* [Let Your Users Wait](http://uxmag.com/articles/let-your-users-wait)
+
+
+
 ## Avoid using static progress indicators
 
 While any feedback is better than none, static indicators should be replaced with another type of indicator.
