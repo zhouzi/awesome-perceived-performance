@@ -1,8 +1,5 @@
-The purpose of this repository is to collect design insights about perceived speed.
-The name comes from the fact that it's all about designing reactive interfaces.
-It's also a reference to [Reactive Systems](http://www.reactivemanifesto.org/) as I consider those patterns to be the design translation of this approach.
-
-Feel free to contribute by [submitting an "issue"](https://github.com/Zhouzi/reactivedesign/issues).
+The resources and quotes are not ordered chronologically but simply in the order I discover them.
+So the last added resources are at the top.
 
 # Articles
 
