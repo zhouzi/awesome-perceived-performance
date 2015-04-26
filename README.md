@@ -35,6 +35,12 @@ So the last added resources are at the top.
 
 ---
 
+## Use backwards moving ribbings
+
+A research study found that progress bars with backwards moving ribbings seem faster to users than forwards moving ribbings.
+
+* [How to Make Progress Bars Feel Faster to Users](http://uxmovement.com/buttons/how-to-make-progress-bars-feel-faster-to-users/)
+
 ## Making users wait too long is a user experience issue
 
 If users get the feeling that your application loads too slow, they’ll grow impatient, and spend their time elsewhere.
