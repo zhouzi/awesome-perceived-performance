@@ -3,6 +3,7 @@ So the last added resources are at the top.
 
 # Articles
 
+* [How to Make Progress Bars Feel Faster to Users](http://uxmovement.com/buttons/how-to-make-progress-bars-feel-faster-to-users/)
 * [The "Psychological" Speed of Mobile Interfaces](https://medium.com/ui-collection/the-psychological-speed-of-mobile-interfaces-df25276295dd)
 * [The Perception of Speed](http://www.stevesouders.com/blog/2012/12/03/the-perception-of-speed/)
 * [Let Your Users Wait](http://uxmag.com/articles/let-your-users-wait)
