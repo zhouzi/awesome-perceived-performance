@@ -35,6 +35,12 @@ So the last added resources are at the top.
 
 ---
 
+## Accelerate the progress and avoid pauses at the end
+
+Progress bars with accelerating progress are strongly favored over decelerating progress.
+
+* [How to Make Progress Bars Feel Faster to Users](http://uxmovement.com/buttons/how-to-make-progress-bars-feel-faster-to-users/)
+
 ## Increase the number of pulsations
 
 A research study found that "the progress bar with increasing pulsation was more likely to be perceived as having a shorter duration".
