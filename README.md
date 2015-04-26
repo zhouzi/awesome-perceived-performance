@@ -3,6 +3,7 @@ So the last added resources are at the top.
 
 # Articles
 
+* [The Perception of Speed](http://www.stevesouders.com/blog/2012/12/03/the-perception-of-speed/)
 * [Let Your Users Wait](http://uxmag.com/articles/let-your-users-wait)
 * [Progress Indicators Make a Slow System Less Insufferable](http://www.nngroup.com/articles/progress-indicators/)
 * [Progress & Activity](http://www.google.com/design/spec/components/progress-activity.html)
@@ -21,6 +22,7 @@ So the last added resources are at the top.
 
 # Demos & Examples
 
+* [The Perception of Speed](http://www.stevesouders.com/blog/2012/12/03/the-perception-of-speed/)
 * [The progress bar illusion](http://www.newscientist.com/blogs/nstv/2010/12/best-videos-of-2010-progress-bar-illusion.html)
 * [Demo of "Building interface previews with React"](http://www.callumhart.com/demo/building-interface-previews-with-react)
 * [Reactive Design on Codepen](http://codepen.io/Zhouzi/full/ogdxJj/)
