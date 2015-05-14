@@ -10,6 +10,8 @@ $text-muted: $gray;
 $wrapper-max-width: 700px;
 $gutter: 20px;
 
+$md-up: "(min-width: 768px)";
+
 *,
 *:before,
 *:after {
@@ -24,7 +26,7 @@ html {
   background-color: #fff;
   color: $text-color;
 
-  @media (min-width: 768px) {
+  @media #{$md-up} {
     font-size: 14px;
   }
 }
@@ -38,7 +40,11 @@ body {
 section {
   max-width: $wrapper-max-width;
   margin: 0 auto;
-  padding: ($gutter * 2);
+  padding: $gutter;
+
+  @media #{$md-up} {
+    padding: ($gutter * 2);
+  }
 }
 
 .article {
@@ -54,7 +60,7 @@ section {
 h2 {
   color: $color-primary;
   background-color: #fff;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
   padding: $gutter;
@@ -150,22 +156,31 @@ header {
 .header-inner {
   max-width: $wrapper-max-width;
   margin: auto;
-  padding: ($gutter * 4) $gutter;
+  padding: ($gutter * 2) $gutter;
+
+  @media #{$md-up} {
+    padding: ($gutter * 4) $gutter;
+  }
 }
 
 h1 {
   color: $color-primary;
   font-size: 3.4rem;
-  margin: 0;
-  line-height: 1.2;
+  margin: 0 0 $gutter 0;
+  line-height: 1;
 
-  @media (min-width: 768px) {
+  @media #{$md-up} {
     font-size: 4rem;
   }
 }
 
 .darker {
+  display: block;
   color: $color-primary-darker;
+
+  @media #{$md-up} {
+    display: inline;
+  }
 }
 
 .article__actions {
