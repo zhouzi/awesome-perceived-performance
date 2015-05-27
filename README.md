@@ -3,6 +3,7 @@ So the last added resources are at the top.
 
 # Articles
 
+* [Why Waiting Is Torture](http://www.nytimes.com/2012/08/19/opinion/sunday/why-waiting-in-line-is-torture.html)
 * [How to Make Progress Bars Feel Faster to Users](http://uxmovement.com/buttons/how-to-make-progress-bars-feel-faster-to-users/)
 * [The "Psychological" Speed of Mobile Interfaces](https://medium.com/ui-collection/the-psychological-speed-of-mobile-interfaces-df25276295dd)
 * [The Perception of Speed](http://www.stevesouders.com/blog/2012/12/03/the-perception-of-speed/)
@@ -35,6 +36,26 @@ So the last added resources are at the top.
 * [Network Link Conditioner](http://nshipster.com/network-link-conditioner/)
 
 ---
+
+## We are more concerned with how long a line is than how fast it's moving
+
+Given a choice between a slow-moving short line and a fast-moving long one, we will often opt for the former, even if the waits are identical.
+
+* [Why Waiting Is Torture](http://www.nytimes.com/2012/08/19/opinion/sunday/why-waiting-in-line-is-torture.html)
+
+## People who wait less than they anticipated leave happier
+
+This is why Disney, the universally acknowledged master of applied queuing psychology, overestimates wait times for rides.
+
+* [Why Waiting Is Torture](http://www.nytimes.com/2012/08/19/opinion/sunday/why-waiting-in-line-is-torture.html)
+
+## Occupied time feels shorter than unoccupied time
+
+The experience of waiting is defined only partly by the objective length of the wait.
+
+* [Why Waiting Is Torture](http://www.nytimes.com/2012/08/19/opinion/sunday/why-waiting-in-line-is-torture.html)
+
+
 
 ## Accelerate the progress and avoid pauses at the end
 
