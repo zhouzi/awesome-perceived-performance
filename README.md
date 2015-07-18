@@ -20,8 +20,9 @@ So the last added resources are at the top.
 * [Facebook content placeholder deconstruction](http://cloudcannon.com/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html)
 * [Making Wait Times Feel Shorter](http://usabilitypost.com/2009/01/23/making-wait-times-feel-shorter/)
 
-# Videos
+# Podcasts & Videos
 
+* [Asynchronous UI and Non-Blocking Interactions with Elliott Kember](http://devchat.tv/js-jabber/114-jsj-asynchronous-ui-and-non-blocking-interactions-with-elliott-kember)
 * [Dopamine Jackpot! Sapolsky on the Science of Pleasure](https://www.youtube.com/watch?t=15&v=axrywDP9Ii0)
 
 # Documents
