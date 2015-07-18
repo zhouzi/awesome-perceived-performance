@@ -40,6 +40,7 @@ So the last added resources are at the top.
 
 # Tools
 
+* [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 * [Web Page Test](http://www.webpagetest.org/)
 * [Network Link Conditioner](http://nshipster.com/network-link-conditioner/)
 
