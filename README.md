@@ -42,6 +42,12 @@ So the last added resources are at the top.
 
 ---
 
+## If something is fast, it must be easy
+
+Quick is cheap. (...) Good things take time and are worth waiting for.
+
+* [Wait for It...](http://uxmas.com/2013/wait-for-it)
+
 ## Faster doesn’t always equal better
 
 There’s a mantra in the software world that faster is better. Are there moments when intentionally adding a few extra seconds creates a better experience?
