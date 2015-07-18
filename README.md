@@ -44,6 +44,14 @@ So the last added resources are at the top.
 
 ---
 
+## Weight does not need to increase wait
+
+We can often (usually, even) deliver a usable representation of a web page's content very quickly.
+
+* [More Weight Doesn't Mean More Wait](https://www.filamentgroup.com/lab/weight-wait.html)
+
+
+
 ## If something is fast, it must be easy
 
 Quick is cheap. (...) Good things take time and are worth waiting for.
