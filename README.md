@@ -38,6 +38,14 @@ So the last added resources are at the top.
 
 ---
 
+## Faster doesn’t always equal better
+
+There’s a mantra in the software world that faster is better. Are there moments when intentionally adding a few extra seconds creates a better experience?
+
+* [Wait for It...](http://uxmas.com/2013/wait-for-it)
+
+
+
 ## We are more concerned with how long a line is than how fast it's moving
 
 Given a choice between a slow-moving short line and a fast-moving long one, we will often opt for the former, even if the waits are identical.
