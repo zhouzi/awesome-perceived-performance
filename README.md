@@ -40,6 +40,7 @@ So the last added resources are at the top.
 
 # Tools
 
+* [Web Page Test](http://www.webpagetest.org/)
 * [Network Link Conditioner](http://nshipster.com/network-link-conditioner/)
 
 ---
