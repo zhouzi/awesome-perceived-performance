@@ -3,6 +3,7 @@ So the last added resources are at the top.
 
 # Articles
 
+* [Wait for It...](http://uxmas.com/2013/wait-for-it)
 * [Why Waiting Is Torture](http://www.nytimes.com/2012/08/19/opinion/sunday/why-waiting-in-line-is-torture.html)
 * [How to Make Progress Bars Feel Faster to Users](http://uxmovement.com/buttons/how-to-make-progress-bars-feel-faster-to-users/)
 * [The "Psychological" Speed of Mobile Interfaces](https://medium.com/ui-collection/the-psychological-speed-of-mobile-interfaces-df25276295dd)
