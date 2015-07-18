@@ -3,8 +3,6 @@ var sass         = require('gulp-ruby-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var generator    = require('./assets/generator');
 
-gulp.task('default', ['styles'], generator);
-
 gulp.task('styles', function () {
     return gulp
         .src('assets/styles.scss')
@@ -15,4 +13,9 @@ gulp.task('styles', function () {
 
 gulp.task('watch', ['default'], function () {
     gulp.watch('assets/styles.scss', ['styles']);
+    gulp.watch('README.md', ['generate']);
 });
+
+gulp.task('generate', generator);
+
+gulp.task('default', ['styles', 'generate']);
