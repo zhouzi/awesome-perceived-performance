@@ -1,630 +1,428 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Reactive Design</title>
-        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-        <link href="https://fontastic.s3.amazonaws.com/zGTzm7PWhxWKsYei5HeYdG/icons.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/styles.css">
-    </head>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Reactive Design</title><link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"><link href="https://fontastic.s3.amazonaws.com/zGTzm7PWhxWKsYei5HeYdG/icons.css" rel="stylesheet"><!--link(rel='stylesheet', href='styles.css')--><style>*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-    <body>
-        <header>
-            <div class="header-inner">
-                <h1><span class="darker">Reactive</span>Design</h1>
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
 
-                <p>Collection of design insights about perceived speed.</p>
+html {
+  font-size: 14px;
+  box-sizing: border-box;
+}
 
-                <a href="https://github.com/zhouzi/reactivedesign" class="github-button" data-icon="octicon-star" data-style="mega" data-count-href="/zhouzi/reactivedesign/stargazers" data-count-api="/repos/zhouzi/reactivedesign#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star zhouzi/reactivedesign on GitHub">Star</a>
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #859c9b;
+  background-color: #e3f0ef;
+}
 
-                <a href="https://github.com/Zhouzi/reactivedesign">
-                    <span class="icon-github"></span>
-                    More Resources
-                </a>
+.header {
+  padding: 3rem 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+  border-bottom: 3px solid #23cbbf;
+}
 
-                <a href="https://twitter.com/home?status=Collection%20of%20design%20insights%20about%20perceived%20speed%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%20%23reactive%20%23ux%20%23design%20%23insights%20via%20%40zh0uzi" target="_blank">
-                    <span class="icon-twitter"></span>
-                    Tweet
-                </a>
-            </div>
-        </header>
+.header-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
 
-        <section>
-            <article class="article">
-    <h2 id="weight-does-not-need-to-increase-wait">Weight does not need to increase wait</h2>
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #23cbbf;
+  line-height: 1.2;
+}
 
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Weight%20does%20not%20need%20to%20increase%20wait%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23weight-does-not-need-to-increase-wait%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
+h1 {
+  font-size: 3.4rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
 
-        <p>We can often (usually, even) deliver a usable representation of a web page&#39;s content very quickly.</p>
+h1 + p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.darker {
+  display: block;
+  color: #1c9f96;
+}
+
+.list-inline {
+  list-style: none;
+}
+
+.list-inline li {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 0.5rem;
+}
+
+.list-inline li:last-child {
+  padding-right: 0;
+}
+
+a {
+  color: #23cbbf;
+}
+
+a:focus,
+a:hover {
+  color: #14746d;
+}
+
+a [class^="icon-"] {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 0.25rem;
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.content p {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: inherit;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content h2 + ul {
+  list-style: none;
+  background-color: #fff;
+  padding: 1.75rem 0;
+  margin-bottom: 2rem;
+}
+
+.content h2 + ul a {
+  display: block;
+  padding: 0.25rem 2rem;
+}
+
+.content h2 + ul a:focus,
+.content h2 + ul a:hover {
+  background-color: #f5f5f5;
+}
+
+.content h2 + ul a:visited {
+  color: inherit;
+}
+
+.content h3,
+.content h3 + p,
+.content h3 + p + ul {
+  text-align: center;
+}
+
+.content h3 {
+  font-size: 2.4rem;
+  font-size: 2rem;
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.content h3::before,
+.content h3::after {
+  content: '"';
+  color: #d9e1e0;
+}
+
+.content h3 + p,
+.content h3 + p + ul {
+  padding: 1rem;
+  background-color: #d9e1e0;
+}
+
+.content h3 + p {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.content h3 + p + ul {
+  font-size: 0.8rem;
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.content h3 + p + ul a {
+  color: #1c9f96;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer {
+  padding: 1rem;
+}
+
+.footer ul {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 666px) {
+  html {
+    font-size: 16px;
+  }
+
+  .darker {
+    display: inline;
+  }
+}
+</style></head><body><header class="header"><div class="header-container"><h1><span class="darker">Reactive</span>Design</h1><p>Collection of design insights about perceived speed.</p><ul class="list-inline"><li><a href="https://github.com/zhouzi/reactivedesign" data-icon="octicon-star" data-style="mega" data-count-href="/zhouzi/reactivedesign/stargazers" data-count-api="/repos/zhouzi/reactivedesign#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star zhouzi/reactivedesign on GitHub" class="github-button">Star</a></li><li><a href="https://twitter.com/home?status=Collection%20of%20design%20insights%20about%20perceived%20speed%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%20%23reactive%20%23ux%20%23design%20%23insights%20via%20%40zh0uzi" target="_blank"><span class="icon-twitter"></span>Tweet</a></li></ul></div></header><section class="content"><h2 id="articles">Articles</h2>
+<ul>
+<li><a href="https://www.filamentgroup.com/lab/weight-wait.html">More Weight Doesn&#39;t Mean More Wait</a></li>
+<li><a href="http://uxmas.com/2013/wait-for-it">Wait for It...</a></li>
+<li><a href="http://www.nytimes.com/2012/08/19/opinion/sunday/why-waiting-in-line-is-torture.html">Why Waiting Is Torture</a></li>
+<li><a href="http://uxmovement.com/buttons/how-to-make-progress-bars-feel-faster-to-users/">How to Make Progress Bars Feel Faster to Users</a></li>
+<li><a href="https://medium.com/ui-collection/the-psychological-speed-of-mobile-interfaces-df25276295dd">The &quot;Psychological&quot; Speed of Mobile Interfaces</a></li>
+<li><a href="http://www.stevesouders.com/blog/2012/12/03/the-perception-of-speed/">The Perception of Speed</a></li>
+<li><a href="http://uxmag.com/articles/let-your-users-wait">Let Your Users Wait</a></li>
+<li><a href="http://www.nngroup.com/articles/progress-indicators/">Progress Indicators Make a Slow System Less Insufferable</a></li>
+<li><a href="http://www.google.com/design/spec/components/progress-activity.html">Progress &amp; Activity</a></li>
+<li><a href="https://cloudup.com/blog/the-need-for-speed">The Need for Speed</a></li>
+<li><a href="http://old.alexmaccaw.com/posts/async_ui">Asynchronous UIs - the future of web user interfaces</a></li>
+<li><a href="http://www.fastcodesign.com/1669788/the-3-white-lies-behind-instagrams-lightning-speed">The 3 White Lies Behind Instagram&#39;s Lightning Speed</a></li>
+<li><a href="http://blog.placeit.net/ux-tactics-make-slow-things-seem-faster/">UX Tactics To Make Slow Things Seem Faster</a></li>
+<li><a href="http://www.callumhart.com/blog/building-interface-previews-with-react">Building interface previews with React</a></li>
+<li><a href="http://www.callumhart.com/blog/non-blocking-uis-with-interface-previews">Non-blocking UI&#39;s with interface previews</a></li>
+<li><a href="http://cloudcannon.com/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html">Facebook content placeholder deconstruction</a></li>
+<li><a href="http://usabilitypost.com/2009/01/23/making-wait-times-feel-shorter/">Making Wait Times Feel Shorter</a></li>
+</ul>
+<h2 id="podcasts-videos">Podcasts &amp; Videos</h2>
+<ul>
+<li><a href="http://devchat.tv/js-jabber/114-jsj-asynchronous-ui-and-non-blocking-interactions-with-elliott-kember">Asynchronous UI and Non-Blocking Interactions with Elliott Kember</a></li>
+<li><a href="https://www.youtube.com/watch?t=15&amp;v=axrywDP9Ii0">Dopamine Jackpot! Sapolsky on the Science of Pleasure</a></li>
+</ul>
+<h2 id="documents">Documents</h2>
+<ul>
+<li><a href="http://www.chrisharrison.net/projects/progressbars2/ProgressBarsHarrison.pdf">Faster Progress Bars: Manipulating Perceived Duration with Visual Augmentations</a></li>
+<li><a href="http://sighci.org/uploads/published_papers/bit04/BIT_Nah.pdf">A study on tolerable waiting time</a></li>
+</ul>
+<h2 id="demos-examples">Demos &amp; Examples</h2>
+<ul>
+<li><a href="http://www.stevesouders.com/blog/2012/12/03/the-perception-of-speed/">The Perception of Speed</a></li>
+<li><a href="http://www.newscientist.com/blogs/nstv/2010/12/best-videos-of-2010-progress-bar-illusion.html">The progress bar illusion</a></li>
+<li><a href="http://www.callumhart.com/demo/building-interface-previews-with-react">Demo of &quot;Building interface previews with React&quot;</a></li>
+<li><a href="http://codepen.io/Zhouzi/full/ogdxJj/">Reactive Design on Codepen</a></li>
+</ul>
+<h2 id="tools">Tools</h2>
+<ul>
+<li><a href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights</a></li>
+<li><a href="http://www.webpagetest.org/">Web Page Test</a></li>
+<li><a href="http://nshipster.com/network-link-conditioner/">Network Link Conditioner</a></li>
+</ul>
+<h2 id="quotes">Quotes</h2>
+<h3 id="weight-does-not-need-to-increase-wait">Weight does not need to increase wait</h3>
+<p>We can often (usually, even) deliver a usable representation of a web page&#39;s content very quickly.</p>
 <ul>
 <li><a href="https://www.filamentgroup.com/lab/weight-wait.html">More Weight Doesn&#39;t Mean More Wait</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="if-something-is-fast-it-must-be-easy">If something is fast, it must be easy</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22If%20something%20is%20fast%2C%20it%20must%20be%20easy%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23if-something-is-fast-it-must-be-easy%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>Quick is cheap. (...) Good things take time and are worth waiting for.</p>
+<h3 id="if-something-is-fast-it-must-be-easy">If something is fast, it must be easy</h3>
+<p>Quick is cheap. (...) Good things take time and are worth waiting for.</p>
 <ul>
 <li><a href="http://uxmas.com/2013/wait-for-it">Wait for It...</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="faster-doesn-t-always-equal-better">Faster doesn’t always equal better</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Faster%20doesn%E2%80%99t%20always%20equal%20better%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23faster-doesn-t-always-equal-better%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>There’s a mantra in the software world that faster is better. Are there moments when intentionally adding a few extra seconds creates a better experience?</p>
+<h3 id="faster-doesn-t-always-equal-better">Faster doesn’t always equal better</h3>
+<p>There’s a mantra in the software world that faster is better. Are there moments when intentionally adding a few extra seconds creates a better experience?</p>
 <ul>
 <li><a href="http://uxmas.com/2013/wait-for-it">Wait for It...</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="we-are-more-concerned-with-how-long-a-line-is-than-how-fast-it-s-moving">We are more concerned with how long a line is than how fast it&#39;s moving</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22We%20are%20more%20concerned%20with%20how%20long%20a%20line%20is%20than%20how%20fast%20it&#x27;s%20moving%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23we-are-more-concerned-with-how-long-a-line-is-than-how-fast-it-s-moving%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>Given a choice between a slow-moving short line and a fast-moving long one, we will often opt for the former, even if the waits are identical.</p>
+<h3 id="we-are-more-concerned-with-how-long-a-line-is-than-how-fast-it-s-moving">We are more concerned with how long a line is than how fast it&#39;s moving</h3>
+<p>Given a choice between a slow-moving short line and a fast-moving long one, we will often opt for the former, even if the waits are identical.</p>
 <ul>
 <li><a href="http://www.nytimes.com/2012/08/19/opinion/sunday/why-waiting-in-line-is-torture.html">Why Waiting Is Torture</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="people-who-wait-less-than-they-anticipated-leave-happier">People who wait less than they anticipated leave happier</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22People%20who%20wait%20less%20than%20they%20anticipated%20leave%20happier%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23people-who-wait-less-than-they-anticipated-leave-happier%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>This is why Disney, the universally acknowledged master of applied queuing psychology, overestimates wait times for rides.</p>
+<h3 id="people-who-wait-less-than-they-anticipated-leave-happier">People who wait less than they anticipated leave happier</h3>
+<p>This is why Disney, the universally acknowledged master of applied queuing psychology, overestimates wait times for rides.</p>
 <ul>
 <li><a href="http://www.nytimes.com/2012/08/19/opinion/sunday/why-waiting-in-line-is-torture.html">Why Waiting Is Torture</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="occupied-time-feels-shorter-than-unoccupied-time">Occupied time feels shorter than unoccupied time</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Occupied%20time%20feels%20shorter%20than%20unoccupied%20time%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23occupied-time-feels-shorter-than-unoccupied-time%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>The experience of waiting is defined only partly by the objective length of the wait.</p>
+<h3 id="occupied-time-feels-shorter-than-unoccupied-time">Occupied time feels shorter than unoccupied time</h3>
+<p>The experience of waiting is defined only partly by the objective length of the wait.</p>
 <ul>
 <li><a href="http://www.nytimes.com/2012/08/19/opinion/sunday/why-waiting-in-line-is-torture.html">Why Waiting Is Torture</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="accelerate-the-progress-and-avoid-pauses-at-the-end">Accelerate the progress and avoid pauses at the end</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Accelerate%20the%20progress%20and%20avoid%20pauses%20at%20the%20end%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23accelerate-the-progress-and-avoid-pauses-at-the-end%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>Progress bars with accelerating progress are strongly favored over decelerating progress.</p>
+<h3 id="accelerate-the-progress-and-avoid-pauses-at-the-end">Accelerate the progress and avoid pauses at the end</h3>
+<p>Progress bars with accelerating progress are strongly favored over decelerating progress.</p>
 <ul>
 <li><a href="http://uxmovement.com/buttons/how-to-make-progress-bars-feel-faster-to-users/">How to Make Progress Bars Feel Faster to Users</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="increase-the-number-of-pulsations">Increase the number of pulsations</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Increase%20the%20number%20of%20pulsations%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23increase-the-number-of-pulsations%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>A research study found that &quot;the progress bar with increasing pulsation was more likely to be perceived as having a shorter duration&quot;.</p>
+<h3 id="increase-the-number-of-pulsations">Increase the number of pulsations</h3>
+<p>A research study found that &quot;the progress bar with increasing pulsation was more likely to be perceived as having a shorter duration&quot;.</p>
 <ul>
 <li><a href="http://uxmovement.com/buttons/how-to-make-progress-bars-feel-faster-to-users/">How to Make Progress Bars Feel Faster to Users</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="use-backwards-moving-ribbings">Use backwards moving ribbings</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Use%20backwards%20moving%20ribbings%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23use-backwards-moving-ribbings%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>A research study found that progress bars with backwards moving ribbings seem faster to users than forwards moving ribbings.</p>
+<h3 id="use-backwards-moving-ribbings">Use backwards moving ribbings</h3>
+<p>A research study found that progress bars with backwards moving ribbings seem faster to users than forwards moving ribbings.</p>
 <ul>
 <li><a href="http://uxmovement.com/buttons/how-to-make-progress-bars-feel-faster-to-users/">How to Make Progress Bars Feel Faster to Users</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="making-users-wait-too-long-is-a-user-experience-issue">Making users wait too long is a user experience issue</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Making%20users%20wait%20too%20long%20is%20a%20user%20experience%20issue%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23making-users-wait-too-long-is-a-user-experience-issue%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>If users get the feeling that your application loads too slow, they’ll grow impatient, and spend their time elsewhere.</p>
+<h3 id="making-users-wait-too-long-is-a-user-experience-issue">Making users wait too long is a user experience issue</h3>
+<p>If users get the feeling that your application loads too slow, they’ll grow impatient, and spend their time elsewhere.</p>
 <ul>
 <li><a href="http://uxmovement.com/buttons/how-to-make-progress-bars-feel-faster-to-users/">How to Make Progress Bars Feel Faster to Users</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="what-do-you-eat-when-you-re-starving-">What do you eat when you’re starving?</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22What%20do%20you%20eat%20when%20you%E2%80%99re%20starving%3F%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23what-do-you-eat-when-you-re-starving-%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>&quot;Anything&quot; is probably the correct answer.
+<h3 id="what-do-you-eat-when-you-re-starving-">What do you eat when you’re starving?</h3>
+<p>&quot;Anything&quot; is probably the correct answer.
 In other words, our expectations of something (...) obviously affect our appreciation of the outcome.</p>
 <ul>
 <li><a href="http://uxmag.com/articles/let-your-users-wait">Let Your Users Wait</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="faster-isn-t-always-better">Faster isn’t always better</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Faster%20isn%E2%80%99t%20always%20better%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23faster-isn-t-always-better%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>When an action we perform happens faster than we would expect it to, we may not appreciate the effort put into it.
+<h3 id="faster-isn-t-always-better">Faster isn’t always better</h3>
+<p>When an action we perform happens faster than we would expect it to, we may not appreciate the effort put into it.
 In more extreme cases we may think that if it happened too fast, maybe it didn’t happen at all.</p>
 <ul>
 <li><a href="http://uxmag.com/articles/let-your-users-wait">Let Your Users Wait</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="avoid-using-static-progress-indicators">Avoid using static progress indicators</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Avoid%20using%20static%20progress%20indicators%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23avoid-using-static-progress-indicators%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>While any feedback is better than none, static indicators should be replaced with another type of indicator.</p>
+<h3 id="avoid-using-static-progress-indicators">Avoid using static progress indicators</h3>
+<p>While any feedback is better than none, static indicators should be replaced with another type of indicator.</p>
 <ul>
 <li><a href="http://www.nngroup.com/articles/progress-indicators/">Progress Indicators Make a Slow System Less Insufferable</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="an-operation-should-only-be-represented-by-one-indicator">An operation should only be represented by one indicator</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22An%20operation%20should%20only%20be%20represented%20by%20one%20indicator%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23an-operation-should-only-be-represented-by-one-indicator%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>For example, one refresh operation should not display both a refresh bar and an activity circle.</p>
+<h3 id="an-operation-should-only-be-represented-by-one-indicator">An operation should only be represented by one indicator</h3>
+<p>For example, one refresh operation should not display both a refresh bar and an activity circle.</p>
 <ul>
 <li><a href="http://www.google.com/design/spec/components/progress-activity.html">Progress &amp; Activity</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="if-the-percentage-of-completion-is-known-use-a-determinate-indicator">If the percentage of completion is known, use a determinate indicator</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22If%20the%20percentage%20of%20completion%20is%20known%2C%20use%20a%20determinate%20indicator%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23if-the-percentage-of-completion-is-known-use-a-determinate-indicator%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>They give users a quick sense of how long an operation will take.</p>
+<h3 id="if-the-percentage-of-completion-is-known-use-a-determinate-indicator">If the percentage of completion is known, use a determinate indicator</h3>
+<p>They give users a quick sense of how long an operation will take.</p>
 <ul>
 <li><a href="http://www.google.com/design/spec/components/progress-activity.html">Progress &amp; Activity</a></li>
 <li><a href="http://www.nngroup.com/articles/progress-indicators/">Progress Indicators Make a Slow System Less Insufferable</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="perceived-speed-matters-a-lot">Perceived speed matters a lot</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Perceived%20speed%20matters%20a%20lot%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23perceived-speed-matters-a-lot%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>Speed is critical and can make a huge difference to user experience, engagement and revenue.</p>
+<h3 id="perceived-speed-matters-a-lot">Perceived speed matters a lot</h3>
+<p>Speed is critical and can make a huge difference to user experience, engagement and revenue.</p>
 <ul>
 <li><a href="http://old.alexmaccaw.com/posts/async_ui">Asynchronous UIs - the future of web user interfaces</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="interactions-should-be-resolved-instantly">Interactions should be resolved instantly</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Interactions%20should%20be%20resolved%20instantly%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23interactions-should-be-resolved-instantly%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>There should be no loading messages or spinners.
+<h3 id="interactions-should-be-resolved-instantly">Interactions should be resolved instantly</h3>
+<p>There should be no loading messages or spinners.
 Requests to the server should be decoupled from the interface.</p>
 <ul>
 <li><a href="http://old.alexmaccaw.com/posts/async_ui">Asynchronous UIs - the future of web user interfaces</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="users-want-to-use-your-application-without-any-interruptions">Users want to use your application without any interruptions</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Users%20want%20to%20use%20your%20application%20without%20any%20interruptions%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23users-want-to-use-your-application-without-any-interruptions%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>They don&#39;t give a damn if a request to the server is still pending.</p>
+<h3 id="users-want-to-use-your-application-without-any-interruptions">Users want to use your application without any interruptions</h3>
+<p>They don&#39;t give a damn if a request to the server is still pending.</p>
 <ul>
 <li><a href="http://old.alexmaccaw.com/posts/async_ui">Asynchronous UIs - the future of web user interfaces</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="feedback-is-useful-and-doesn-t-block-further-interaction">Feedback is useful and doesn&#39;t block further interaction</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Feedback%20is%20useful%20and%20doesn&#x27;t%20block%20further%20interaction%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23feedback-is-useful-and-doesn-t-block-further-interaction%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>Not all feedback is bad. Unobtrusive feedback that&#39;s actually useful to your users is completely fine.</p>
+<h3 id="feedback-is-useful-and-doesn-t-block-further-interaction">Feedback is useful and doesn&#39;t block further interaction</h3>
+<p>Not all feedback is bad. Unobtrusive feedback that&#39;s actually useful to your users is completely fine.</p>
 <ul>
 <li><a href="http://old.alexmaccaw.com/posts/async_ui">Asynchronous UIs - the future of web user interfaces</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="load-content-based-on-importance-not-order">Load Content Based On Importance, Not Order</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Load%20Content%20Based%20On%20Importance%2C%20Not%20Order%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23load-content-based-on-importance-not-order%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>If a lot of friends have liked something, load it first.</p>
+<h3 id="load-content-based-on-importance-not-order">Load Content Based On Importance, Not Order</h3>
+<p>If a lot of friends have liked something, load it first.</p>
 <ul>
 <li><a href="http://www.fastcodesign.com/1669788/the-3-white-lies-behind-instagrams-lightning-speed">The 3 White Lies Behind Instagram&#39;s Lightning Speed</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="use-prerendering">Use prerendering</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Use%20prerendering%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23use-prerendering%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>When reading a blog, a lot of people will click &quot;next post&quot;.
+<h3 id="use-prerendering">Use prerendering</h3>
+<p>When reading a blog, a lot of people will click &quot;next post&quot;.
 So you could get the next page ready before they even click it.</p>
 <ul>
 <li><a href="http://blog.placeit.net/ux-tactics-make-slow-things-seem-faster/">UX Tactics To Make Slow Things Seem Faster</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="work-ahead-of-the-user">Work ahead of the user</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Work%20ahead%20of%20the%20user%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23work-ahead-of-the-user%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>One example (from Instagram) is that whenever you pick a photo to share, as soon as you pick it, it uploads it.</p>
+<h3 id="work-ahead-of-the-user">Work ahead of the user</h3>
+<p>One example (from Instagram) is that whenever you pick a photo to share, as soon as you pick it, it uploads it.</p>
 <ul>
 <li><a href="http://blog.placeit.net/ux-tactics-make-slow-things-seem-faster/">UX Tactics To Make Slow Things Seem Faster</a></li>
 <li><a href="http://www.fastcodesign.com/1669788/the-3-white-lies-behind-instagrams-lightning-speed">The 3 White Lies Behind Instagram&#39;s Lightning Speed</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="feedback-shouldn-t-depend-on-servers">Feedback shouldn&#39;t depend on servers</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Feedback%20shouldn&#x27;t%20depend%20on%20servers%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23feedback-shouldn-t-depend-on-servers%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>What this means is that no matter what your coverage situation is, you still get the visual feedback of your action.</p>
+<h3 id="feedback-shouldn-t-depend-on-servers">Feedback shouldn&#39;t depend on servers</h3>
+<p>What this means is that no matter what your coverage situation is, you still get the visual feedback of your action.</p>
 <ul>
 <li><a href="http://blog.placeit.net/ux-tactics-make-slow-things-seem-faster/">UX Tactics To Make Slow Things Seem Faster</a></li>
 <li><a href="http://www.fastcodesign.com/1669788/the-3-white-lies-behind-instagrams-lightning-speed">The 3 White Lies Behind Instagram&#39;s Lightning Speed</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="use-progressive-image-rendering">Use progressive image rendering</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Use%20progressive%20image%20rendering%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23use-progressive-image-rendering%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>Progressive image rendering is when an image is loaded blurrily, and then becomes clearer as it finishes up.</p>
+<h3 id="use-progressive-image-rendering">Use progressive image rendering</h3>
+<p>Progressive image rendering is when an image is loaded blurrily, and then becomes clearer as it finishes up.</p>
 <ul>
 <li><a href="http://blog.placeit.net/ux-tactics-make-slow-things-seem-faster/">UX Tactics To Make Slow Things Seem Faster</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="give-the-user-something-to-do">Give the user something to do</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Give%20the%20user%20something%20to%20do%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23give-the-user-something-to-do%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>If people have something to do sitting in front of them, they&#39;re much less likely to be grumpy that they&#39;re waiting.</p>
+<h3 id="give-the-user-something-to-do">Give the user something to do</h3>
+<p>If people have something to do sitting in front of them, they&#39;re much less likely to be grumpy that they&#39;re waiting.</p>
 <ul>
 <li><a href="http://blog.placeit.net/ux-tactics-make-slow-things-seem-faster/">UX Tactics To Make Slow Things Seem Faster</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="make-buttons-respond-super-fast">Make buttons respond super-fast</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Make%20buttons%20respond%20super-fast%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23make-buttons-respond-super-fast%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>All you have to do is make the button look pressed as soon as it’s pressed.</p>
+<h3 id="make-buttons-respond-super-fast">Make buttons respond super-fast</h3>
+<p>All you have to do is make the button look pressed as soon as it’s pressed.</p>
 <ul>
 <li><a href="http://blog.placeit.net/ux-tactics-make-slow-things-seem-faster/">UX Tactics To Make Slow Things Seem Faster</a></li>
 <li><a href="http://www.nngroup.com/articles/progress-indicators/">Progress Indicators Make a Slow System Less Insufferable</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="interface-should-feel-fast-regardless-of-network-speed">Interface should feel fast, regardless of network speed</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Interface%20should%20feel%20fast%2C%20regardless%20of%20network%20speed%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23interface-should-feel-fast-regardless-of-network-speed%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>Any action such as loading a new page or clicking a button should have an immediate reaction.</p>
+<h3 id="interface-should-feel-fast-regardless-of-network-speed">Interface should feel fast, regardless of network speed</h3>
+<p>Any action such as loading a new page or clicking a button should have an immediate reaction.</p>
 <ul>
 <li><a href="http://www.callumhart.com/blog/non-blocking-uis-with-interface-previews">Non-blocking UI&#39;s with interface previews</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="don-t-block-the-parts-that-aren-t-dependent-on-the-server">Don&#39;t block the parts that aren&#39;t dependent on the server</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Don&#x27;t%20block%20the%20parts%20that%20aren&#x27;t%20dependent%20on%20the%20server%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23don-t-block-the-parts-that-aren-t-dependent-on-the-server%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>Which means that users are not forced to wait for the whole page to load before navigating away from it.</p>
+<h3 id="don-t-block-the-parts-that-aren-t-dependent-on-the-server">Don&#39;t block the parts that aren&#39;t dependent on the server</h3>
+<p>Which means that users are not forced to wait for the whole page to load before navigating away from it.</p>
 <ul>
 <li><a href="http://www.callumhart.com/blog/non-blocking-uis-with-interface-previews">Non-blocking UI&#39;s with interface previews</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="client-side-rendering-is-a-must">Client side rendering is a must</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Client%20side%20rendering%20is%20a%20must%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23client-side-rendering-is-a-must%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>Interface previews would be very hard to achieve using the conventional server driven approach.</p>
+<h3 id="client-side-rendering-is-a-must">Client side rendering is a must</h3>
+<p>Interface previews would be very hard to achieve using the conventional server driven approach.</p>
 <ul>
 <li><a href="http://www.callumhart.com/blog/non-blocking-uis-with-interface-previews">Non-blocking UI&#39;s with interface previews</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="separate-placeholder-elements-from-the-real-ones">Separate placeholder elements from the real ones</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Separate%20placeholder%20elements%20from%20the%20real%20ones%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23separate-placeholder-elements-from-the-real-ones%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>Generally, their structure differs.</p>
+<h3 id="separate-placeholder-elements-from-the-real-ones">Separate placeholder elements from the real ones</h3>
+<p>Generally, their structure differs.</p>
 <ul>
 <li><a href="http://www.callumhart.com/blog/non-blocking-uis-with-interface-previews">Non-blocking UI&#39;s with interface previews</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="test-your-designs-at-different-internet-speeds">Test your designs at different internet speeds</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Test%20your%20designs%20at%20different%20internet%20speeds%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23test-your-designs-at-different-internet-speeds%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>Seeing how your app performs across slow networks gives you an insight into the degree to which interface previews should be used.</p>
+<h3 id="test-your-designs-at-different-internet-speeds">Test your designs at different internet speeds</h3>
+<p>Seeing how your app performs across slow networks gives you an insight into the degree to which interface previews should be used.</p>
 <ul>
 <li><a href="http://www.callumhart.com/blog/non-blocking-uis-with-interface-previews">Non-blocking UI&#39;s with interface previews</a></li>
 <li><a href="http://nshipster.com/network-link-conditioner/">Network Link Conditioner</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="give-some-indication-of-what-is-going-on">Give some indication of what is going on</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Give%20some%20indication%20of%20what%20is%20going%20on%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23give-some-indication-of-what-is-going-on%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>This is exactly like putting a progress bar on a long action. Apart from the fact it&#39;s some fancy polish, it&#39;s great usability.</p>
+<h3 id="give-some-indication-of-what-is-going-on">Give some indication of what is going on</h3>
+<p>This is exactly like putting a progress bar on a long action. Apart from the fact it&#39;s some fancy polish, it&#39;s great usability.</p>
 <ul>
 <li><a href="http://cloudcannon.com/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html">Facebook content placeholder deconstruction</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="waiting-isn-t-positive-minimize-it">Waiting isn&#39;t positive, minimize it</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Waiting%20isn&#x27;t%20positive%2C%20minimize%20it%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23waiting-isn-t-positive-minimize-it%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>Waiting means you&#39;re spending your time doing nothing because of something else that&#39;s out of your control.</p>
+<h3 id="waiting-isn-t-positive-minimize-it">Waiting isn&#39;t positive, minimize it</h3>
+<p>Waiting means you&#39;re spending your time doing nothing because of something else that&#39;s out of your control.</p>
 <ul>
 <li><a href="http://usabilitypost.com/2009/01/23/making-wait-times-feel-shorter/">Making Wait Times Feel Shorter</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="wait-time-presents-us-with-is-uncertainty">Wait time presents us with is uncertainty</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Wait%20time%20presents%20us%20with%20is%20uncertainty%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23wait-time-presents-us-with-is-uncertainty%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>Uncertainty about when the wait will end (and indeed, in some cases uncertainty about whether anything is happening at all).</p>
+<h3 id="wait-time-presents-us-with-is-uncertainty">Wait time presents us with is uncertainty</h3>
+<p>Uncertainty about when the wait will end (and indeed, in some cases uncertainty about whether anything is happening at all).</p>
 <ul>
 <li><a href="http://usabilitypost.com/2009/01/23/making-wait-times-feel-shorter/">Making Wait Times Feel Shorter</a></li>
 </ul>
-    </div>
-</article>
-<article class="article">
-    <h2 id="absence-of-loading-indicator-lengthens-perception">Absence of loading indicator lengthens perception</h2>
-
-    <div class="article__content">
-        <div class="article__actions">
-            <a href="https://twitter.com/home?status=%22Absence%20of%20loading%20indicator%20lengthens%20perception%22%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%23absence-of-loading-indicator-lengthens-perception%20%23reactivedesign" target="_blank">
-                <span class="icon-twitter"></span>
-            </a>
-        </div>
-
-        <p>This means that without progress bars or some other indicators your application will feel slower to your users.</p>
+<h3 id="absence-of-loading-indicator-lengthens-perception">Absence of loading indicator lengthens perception</h3>
+<p>This means that without progress bars or some other indicators your application will feel slower to your users.</p>
 <ul>
 <li><a href="http://usabilitypost.com/2009/01/23/making-wait-times-feel-shorter/">Making Wait Times Feel Shorter</a></li>
 </ul>
-    </div>
-</article>
-
-        </section>
-
-        <footer>
-            <a href="https://github.com/zhouzi/reactivedesign">
-                <span class="icon-star"></span>
-                Star
-            </a>
-
-            <a href="https://github.com/Zhouzi/reactivedesign">
-                <span class="icon-github"></span>
-                Contribute
-            </a>
-
-            <a href="https://twitter.com/home?status=Collection%20of%20design%20insights%20about%20perceived%20speed%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%20%23reactive%20%23ux%20%23design%20%23insights%20via%20%40zh0uzi" target="_blank">
-                <span class="icon-twitter"></span>
-                Tweet
-            </a>
-        </footer>
-
-        <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-            ga('create', 'UA-43673873-5', 'auto');
-            ga('send', 'pageview');
-        </script>
-    </body>
-</html>
+</section><footer class="footer"><ul class="list-inline"><li><a href="https://github.com/zhouzi/reactivedesign"><span class="icon-star"></span>Star</a></li><li><a href="https://github.com/Zhouzi/reactivedesign"><span class="icon-github"></span>Contribute</a></li><li><a href="https://twitter.com/home?status=Collection%20of%20design%20insights%20about%20perceived%20speed%20http%3A%2F%2Fgabinaureche.com%2Freactivedesign%20%23reactive%20%23ux%20%23design%20%23insights%20via%20%40zh0uzi" target="_blank"><span class="icon-twitter"></span>Tweet</a></li></ul></footer><script id="github-bjs" async="" defer="" src="https://buttons.github.io/buttons.js"></script><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-43673873-5', 'auto');
+ga('send', 'pageview');</script></body></html>

@@ -1,23 +1,10 @@
 {
-  "name": "reactivedesign",
-  "version": "0.0.1",
-  "description": "The purpose of this repository is to collect resources about design patterns that help improving perceived speed by designing reactive interfaces. The name is also a reference to [Reactive Systems](http://www.reactivemanifesto.org/).",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Zhouzi/reactivedesign.git"
+  "private": true,
+  "scripts": {
+    "build": "node index.js"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Zhouzi/reactivedesign/issues"
-  },
-  "homepage": "https://github.com/Zhouzi/reactivedesign",
   "devDependencies": {
-    "entities": "^1.1.1",
-    "gulp": "^3.8.11",
-    "gulp-autoprefixer": "^1.0.1",
-    "gulp-ruby-sass": "^0.7.1",
-    "handlebars": "^3.0.1",
-    "marked": "^0.3.3"
+    "jade": "1.11.0",
+    "marked": "0.3.5"
   }
 }
