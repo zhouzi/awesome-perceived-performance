@@ -1,5 +1,11 @@
 ## Articles
 
+* [Why Performance Matters, Part 3: Tolerance Management](https://www.smashingmagazine.com/2015/12/performance-matters-part-3-tolerance-management/)
+* [Why Performance Matters, Part 2: Perception Management](https://www.smashingmagazine.com/2015/11/why-performance-matters-part-2-perception-management/)
+* [Why Performance Matters, Part 1: The Perception Of Time](https://www.smashingmagazine.com/2015/09/why-performance-matters-the-perception-of-time/)
+* [Experiments in Loading - How Long Will You Wait?](https://www.viget.com/articles/experiments-in-loading-how-long-will-you-wait)
+* [The technology behind preview photos](https://code.facebook.com/posts/991252547593574/the-technology-behind-preview-photos/)
+* [An Introduction to Perceived Performance](http://blog.teamtreehouse.com/perceived-performance)
 * [More Weight Doesn't Mean More Wait](https://www.filamentgroup.com/lab/weight-wait.html)
 * [Wait for It...](http://uxmas.com/2013/wait-for-it)
 * [Why Waiting Is Torture](http://www.nytimes.com/2012/08/19/opinion/sunday/why-waiting-in-line-is-torture.html)
