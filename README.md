@@ -37,7 +37,7 @@
 ## Demos & Examples
 
 * [The Perception of Speed](http://www.stevesouders.com/blog/2012/12/03/the-perception-of-speed/)
-* [The progress bar illusion](http://www.newscientist.com/blogs/nstv/2010/12/best-videos-of-2010-progress-bar-illusion.html)
+* [The progress bar illusion](http://v.youku.com/v_show/id_XMzY0NTM1OTIw.html)
 * [Demo of "Building interface previews with React"](http://www.callumhart.com/demo/building-interface-previews-with-react)
 * [Reactive Design on Codepen](http://codepen.io/Zhouzi/full/ogdxJj/)
 
