@@ -27,6 +27,7 @@
 
 ## Podcasts & Videos
 
+* [Instant Loading: Building offline-first Progressive Web Apps - Google I/O 2016](https://www.youtube.com/watch?v=cmGr0RszHc8)
 * [Asynchronous UI and Non-Blocking Interactions with Elliott Kember](http://devchat.tv/js-jabber/114-jsj-asynchronous-ui-and-non-blocking-interactions-with-elliott-kember)
 * [Dopamine Jackpot! Sapolsky on the Science of Pleasure](https://www.youtube.com/watch?t=15&v=axrywDP9Ii0)
 
