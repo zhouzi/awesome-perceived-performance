@@ -1,5 +1,6 @@
 ## Articles
 
+* [Why are we waiting?](https://www.cxpartners.co.uk/our-thinking/why-are-we-waiting/)
 * [Our best practices are killing mobile web performance](http://molily.de/mobile-web-performance/)
 * [Why Performance Matters, Part 3: Tolerance Management](https://www.smashingmagazine.com/2015/12/performance-matters-part-3-tolerance-management/)
 * [Why Performance Matters, Part 2: Perception Management](https://www.smashingmagazine.com/2015/11/why-performance-matters-part-2-perception-management/)
