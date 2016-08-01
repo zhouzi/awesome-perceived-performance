@@ -1,5 +1,6 @@
 ## Articles
 
+* [Fake it 'til you Make it CSS](https://kyusuf.com/post/fake-it-til-you-make-it-css)
 * [Why are we waiting?](https://www.cxpartners.co.uk/our-thinking/why-are-we-waiting/)
 * [Our best practices are killing mobile web performance](http://molily.de/mobile-web-performance/)
 * [Why Performance Matters, Part 3: Tolerance Management](https://www.smashingmagazine.com/2015/12/performance-matters-part-3-tolerance-management/)
