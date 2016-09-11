@@ -48,6 +48,8 @@
 
 ## Tools
 
+* [Speed Perception](http://speedperception.meteorapp.com)
+* [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 * [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 * [Web Page Test](http://www.webpagetest.org/)
 * [Network Link Conditioner](http://nshipster.com/network-link-conditioner/)
