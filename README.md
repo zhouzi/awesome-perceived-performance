@@ -1,5 +1,6 @@
 ## Articles
 
+* [True Lies Of Optimistic User Interfaces](https://www.smashingmagazine.com/2016/11/true-lies-of-optimistic-user-interfaces/)
 * [The UX Secret That Will Ruin Apps For You](http://www.fastcodesign.com/3061519/evidence/the-ux-secret-that-will-ruin-apps-for-you/)
 * [Fake it 'til you Make it CSS](https://kyusuf.com/post/fake-it-til-you-make-it-css)
 * [Why are we waiting?](https://www.cxpartners.co.uk/our-thinking/why-are-we-waiting/)
