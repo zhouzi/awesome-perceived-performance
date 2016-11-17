@@ -39,6 +39,7 @@
 
 ## Documents
 
+* [Response time in man-computer conversational transactions](https://www.computer.org/csdl/proceedings/afips/1968/5072/00/50720267.pdf)
 * [Faster Progress Bars: Manipulating Perceived Duration with Visual Augmentations](http://www.chrisharrison.net/projects/progressbars2/ProgressBarsHarrison.pdf)
 * [A study on tolerable waiting time](http://sighci.org/uploads/published_papers/bit04/BIT_Nah.pdf)
 
