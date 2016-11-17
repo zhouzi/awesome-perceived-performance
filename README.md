@@ -1,5 +1,6 @@
 ## Articles
 
+* [Improving Perceived Performance with Multiple Background Images](http://csswizardry.com/2016/10/improving-perceived-performance-with-multiple-background-images/)
 * [True Lies Of Optimistic User Interfaces](https://www.smashingmagazine.com/2016/11/true-lies-of-optimistic-user-interfaces/)
 * [The UX Secret That Will Ruin Apps For You](http://www.fastcodesign.com/3061519/evidence/the-ux-secret-that-will-ruin-apps-for-you/)
 * [Fake it 'til you Make it CSS](https://kyusuf.com/post/fake-it-til-you-make-it-css)
