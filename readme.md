@@ -14,13 +14,11 @@
 
 - [Denys Mishunov on Deconstructing Performance](https://vimeo.com/184659742)
 - [Instant Loading: Building offline-first Progressive Web Apps - Google I/O 2016](https://www.youtube.com/watch?v=cmGr0RszHc8)
-- [Asynchronous UI and Non-Blocking Interactions with Elliott Kember](http://devchat.tv/js-jabber/114-jsj-asynchronous-ui-and-non-blocking-interactions-with-elliott-kember)
+- [Asynchronous UI and Non-Blocking Interactions with Elliott Kember](https://www.youtube.com/watch?v=gVgNYiJrnkE)
 - [Dopamine Jackpot! Sapolsky on the Science of Pleasure](https://www.youtube.com/watch?t=15&v=axrywDP9Ii0)
 
 ## Tools
 
-- [Speed Perception](http://speedperception.meteorapp.com)
-- [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 - [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 - [Web Page Test](http://www.webpagetest.org/)
 - [Network Link Conditioner](http://nshipster.com/network-link-conditioner/)
@@ -29,8 +27,6 @@
 
 - [Demo of "Reactive Web Design: The secret to building web apps that feel amazing"](http://reactive.surge.sh/)
 - [The Perception of Speed](http://www.stevesouders.com/blog/2012/12/03/the-perception-of-speed/)
-- [The progress bar illusion](http://v.youku.com/v_show/id_XMzY0NTM1OTIw.html)
-- [Demo of "Building interface previews with React"](http://www.callumhart.com/demo/building-interface-previews-with-react)
 - [Reactive Design on Codepen](http://codepen.io/Zhouzi/full/ogdxJj/)
 
 ## Articles
@@ -38,7 +34,7 @@
 - [Reactive Web Design: The secret to building web apps that feel amazing](https://medium.com/@owencm/reactive-web-design-the-secret-to-building-web-apps-that-feel-amazing-b5cbfe9b7c50)
 - [Improving Perceived Performance with Multiple Background Images](http://csswizardry.com/2016/10/improving-perceived-performance-with-multiple-background-images/)
 - [True Lies Of Optimistic User Interfaces](https://www.smashingmagazine.com/2016/11/true-lies-of-optimistic-user-interfaces/)
-- [The UX Secret That Will Ruin Apps For You](http://www.fastcodesign.com/3061519/evidence/the-ux-secret-that-will-ruin-apps-for-you/)
+- [The UX Secret That Will Ruin Apps For You](https://www.fastcompany.com/3061519/the-ux-secret-that-will-ruin-apps-for-you)
 - [Fake it 'til you Make it CSS](https://kyusuf.com/post/fake-it-til-you-make-it-css)
 - [Why are we waiting?](https://www.cxpartners.co.uk/our-thinking/why-are-we-waiting/)
 - [Our best practices are killing mobile web performance](http://molily.de/mobile-web-performance/)
@@ -56,18 +52,18 @@
 - [The Perception of Speed](http://www.stevesouders.com/blog/2012/12/03/the-perception-of-speed/)
 - [Let Your Users Wait](http://uxmag.com/articles/let-your-users-wait)
 - [Progress Indicators Make a Slow System Less Insufferable](http://www.nngroup.com/articles/progress-indicators/)
-- [Progress & Activity](http://www.google.com/design/spec/components/progress-activity.html)
 - [The Need for Speed](https://cloudup.com/blog/the-need-for-speed)
-- [Asynchronous UIs - the future of web user interfaces](http://old.alexmaccaw.com/posts/async_ui)
-- [The 3 White Lies Behind Instagram's Lightning Speed](http://www.fastcodesign.com/1669788/the-3-white-lies-behind-instagrams-lightning-speed)
+- [Asynchronous UIs - the future of web user interfaces](https://blog.alexmaccaw.com/asynchronous-uis-the-future-of-web-user-interfaces/)
+- [The 3 White Lies Behind Instagram's Lightning Speed](https://www.fastcompany.com/1669788/the-3-white-lies-behind-instagrams-lightning-speed)
 - [UX Tactics To Make Slow Things Seem Faster](http://blog.placeit.net/ux-tactics-make-slow-things-seem-faster/)
-- [Building interface previews with React](http://www.callumhart.com/blog/building-interface-previews-with-react)
+- [Building interface previews with React](https://www.callumhart.com/blog/building-interface-previews-with-react/)
 - [Non-blocking UI's with interface previews](http://www.callumhart.com/blog/non-blocking-uis-with-interface-previews)
 - [Facebook content placeholder deconstruction](http://cloudcannon.com/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html)
 - [Making Wait Times Feel Shorter](http://usabilitypost.com/2009/01/23/making-wait-times-feel-shorter/)
+- [Understanding and Measuring Perceived Performance](https://instartlogic.github.io/p/spdperception/)
 
 ## Documents
 
 - [Response time in man-computer conversational transactions](https://www.computer.org/csdl/proceedings/afips/1968/5072/00/50720267.pdf)
 - [Faster Progress Bars: Manipulating Perceived Duration with Visual Augmentations](http://www.chrisharrison.net/projects/progressbars2/ProgressBarsHarrison.pdf)
-- [A study on tolerable waiting time](http://sighci.org/uploads/published_papers/bit04/BIT_Nah.pdf)
+- [A study on tolerable waiting time](https://www.researchgate.net/publication/220893869_A_Study_on_Tolerable_Waiting_Time_How_Long_Are_Web_Users_Willing_to_Wait)
