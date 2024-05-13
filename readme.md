@@ -56,10 +56,11 @@
 - [Asynchronous UIs - the future of web user interfaces](https://blog.alexmaccaw.com/asynchronous-uis-the-future-of-web-user-interfaces/)
 - [The 3 White Lies Behind Instagram's Lightning Speed](https://www.fastcompany.com/1669788/the-3-white-lies-behind-instagrams-lightning-speed)
 - [UX Tactics To Make Slow Things Seem Faster](http://blog.placeit.net/ux-tactics-make-slow-things-seem-faster/)
-- [Building interface previews with React](http://www.callumhart.com/blog/building-interface-previews-with-react)
+- [Building interface previews with React](https://www.callumhart.com/blog/building-interface-previews-with-react/)
 - [Non-blocking UI's with interface previews](http://www.callumhart.com/blog/non-blocking-uis-with-interface-previews)
 - [Facebook content placeholder deconstruction](http://cloudcannon.com/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html)
 - [Making Wait Times Feel Shorter](http://usabilitypost.com/2009/01/23/making-wait-times-feel-shorter/)
+- [Understanding and Measuring Perceived Performance](https://instartlogic.github.io/p/spdperception/)
 
 ## Documents
 
